@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/mainActivity3">
+    <activity
+        android:id="@+id/mainActivity3"
+        android:name="com.example.myapplicationlistview.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity3_to_activityCitys"
+            app:destination="@id/activityCitys" />
+        <action
+            android:id="@+id/action_mainActivity3_to_activityRegion2"
+            app:destination="@id/activityRegion2" />
+        <action
+            android:id="@+id/action_mainActivity3_to_statesActivity2"
+            app:destination="@id/statesActivity2" />
+    </activity>
+    <activity
+        android:id="@+id/activityCitys"
+        android:name="com.example.myapplicationlistview.ActivityCitys"
+        android:label="activity_citys"
+        tools:layout="@layout/activity_citys" />
+    <activity
+        android:id="@+id/statesActivity2"
+        android:name="com.example.myapplicationlistview.StatesActivity"
+        android:label="activity_estados"
+        tools:layout="@layout/activity_estados" >
+        <action
+            android:id="@+id/action_statesActivity2_to_mainActivity3"
+            app:destination="@id/mainActivity3" />
+    </activity>
+    <activity
+        android:id="@+id/activityRegion2"
+        android:name="com.example.myapplicationlistview.ActivityRegion"
+        android:label="activity_regiao"
+        tools:layout="@layout/activity_regiao" >
+        <action
+            android:id="@+id/action_activityRegion2_to_mainActivity3"
+            app:destination="@id/mainActivity3" />
+    </activity>
+</navigation>
